@@ -243,8 +243,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(90.21deg, rgba(13, 45, 48, 0.713) -5.91%, rgba(35, 73, 144, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.54);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -280,7 +280,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
 }
 .banner button:hover svg {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 .banner img {
   animation: updown 3s linear infinite;
@@ -306,7 +306,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #15181ab7;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -389,7 +389,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #101e37 -5.91%, #0c2c34 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -421,7 +421,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #051f22 -5.91%, #10234a 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -454,7 +454,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 10px;
   letter-spacing: 0.8px;
 }
 .background-image-right {
@@ -468,7 +468,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #011920 -5.91%, #040e0d 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
