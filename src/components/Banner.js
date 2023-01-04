@@ -10,13 +10,15 @@ export const Banner = () => {
   const toRotate = ['eat();', 'sleep();', 'code();', 'repeat();'];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() *100)
+  const [index, setIndex] = useState(1);
   const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
-    }, delta)
-    return () => { clearInterval(ticker)}
+    }, delta);
+
+    return () => { clearInterval(ticker) };
   }, [text])
 
   const tick = () => {
@@ -27,15 +29,20 @@ export const Banner = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2)
+      setDelta(prevDelta => prevDelta / 2);
     }
+
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setDelta(period)
+      setIndex(prevIndex => prevIndex - 1);
+      setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500)
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex(prevIndex => prevIndex + 1);
     }
   }
 
