@@ -80,3 +80,5 @@ export const Skills = () => {
     </section>
   );
 };
+
+//	.	</button> <a href="SaraChoiResume.pdf" download="Sara SaraChoiResume.pdf"> <button className="btn highlighted-btn">Get Resume</button> </a>
