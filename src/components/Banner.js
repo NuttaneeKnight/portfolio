@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
-import { Row, Col } from "react-bootstrap"
+import { Row, Col, Nav } from "react-bootstrap"
 import {ArrowRightCircle} from 'react-bootstrap-icons'
 import headerImg from '../assets/img/header-img.svg'
-import TrackVisibility from "react-on-screen"
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -56,7 +56,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1>{`Hi! I'm Nuttanee Knight`} <br></br> <span className="txt-rotate" dataPeriod="1000"><span className="wrap">{text}</span></span></h1>
                 <p>Welcome to my portfolio, <br></br> Cannot wait to collaborate with you!</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle href='#contact' size={25} /></button>
+                  <Nav.Link href="#contact"><button onClick={() => console.log('contact')}>Let’s Connect <ArrowRightCircle href='#contact' size={25} /></button></Nav.Link>
               </div>}
             </TrackVisibility>
             </div>

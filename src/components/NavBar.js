@@ -51,6 +51,9 @@ export const NavBar = () => {
               </div>
             </span>
           </Navbar.Collapse>
+          <Nav.Link href="#contact">
+          <button type="button" class="btn btn-outline-secondary"><span>Let’s Connect</span></button>
+              </Nav.Link>
         </Container>
       </Navbar>
     </Router>
