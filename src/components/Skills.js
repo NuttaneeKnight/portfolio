@@ -3,6 +3,8 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import NuttaneeKnight from '../assets/NuttaneeKnight.pdf'
+
 
 export const Skills = () => {
   const responsive = {
@@ -42,6 +44,7 @@ export const Skills = () => {
                   APIs, PostgreSQL<br></br>Misc.: Mocha, Chai, Knex, Git,
                   GitHub, Heroku, Node Package Manager, Visual Studio Code
                 </p>
+                <a href={NuttaneeKnight} download='NuttaneeKnight'><button type="button" class="btn btn-primary">Get Resume</button></a>
               </p>
               <Carousel
                 responsive={responsive}
@@ -80,5 +83,3 @@ export const Skills = () => {
     </section>
   );
 };
-
-//	.	</button> <a href="SaraChoiResume.pdf" download="Sara SaraChoiResume.pdf"> <button className="btn highlighted-btn">Get Resume</button> </a>
