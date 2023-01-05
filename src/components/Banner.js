@@ -50,6 +50,7 @@ export const Banner = () => {
     <section className='banner' id='home'>
       <Row className='align-items-center'>
         <Col xs={12} md={6} xl={7}>
+        <div className='banner-content'>
           <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
@@ -58,6 +59,7 @@ export const Banner = () => {
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle href='#contact' size={25} /></button>
               </div>}
             </TrackVisibility>
+            </div>
         </Col>
         <Col xs={1} md={1} xl={1}>
           <img src={headerImg} alt='Header Img'></img>

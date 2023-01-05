@@ -239,6 +239,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.banner-content {
+  margin-left: 70px;
+}
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -308,9 +311,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx {
   background: #15181ab7;
   border-radius: 64px;
-  text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  text-align: center;
+  margin-top: 60px;
 }
 .skill h2 {
 	font-size: 45px;
