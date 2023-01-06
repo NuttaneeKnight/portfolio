@@ -4,6 +4,8 @@ import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import NuttaneeKnight from '../assets/NuttaneeKnight.pdf'
+import Typical from 'react-typical'
+
 
 
 
@@ -34,6 +36,18 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
+              {/* <Typical
+              loop={Infinity}
+              steps={[
+                'About 👩‍💻',
+                2000,
+                '&&',
+                2000,
+                'My Skills 🖥',
+                2000,
+              ]}
+              ><h2>{Typical}</h2>
+              </Typical> */}
               <h2>About 👩‍💻 &&<br></br> My Skills 🖥</h2>
               <p>
                 Experienced Front End web developer with Full Stack developer
