@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import NuttaneeKnight from '../assets/NuttaneeKnight.pdf'
 
 
+
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -33,7 +34,7 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>About Me &&<br></br> My Skills</h2>
+              <h2>About 👩‍💻 &&<br></br> My Skills 🖥</h2>
               <p>
                 Experienced Front End web developer with Full Stack developer
                 experience. I am a software engineer bootcamp graduate with an
