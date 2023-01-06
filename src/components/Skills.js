@@ -5,10 +5,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import NuttaneeKnight from '../assets/NuttaneeKnight.pdf'
 
-
-
-
-
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
