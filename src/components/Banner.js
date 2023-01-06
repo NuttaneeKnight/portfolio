@@ -8,7 +8,7 @@ import TrackVisibility from "react-on-screen";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ['eat(); 🍽();', 'sleep(); 🛌();', 'code(); 💻();', 'repeat(); 🔁();'];
+  const toRotate = ['eat();', 'sleep();', 'code();', 'repeat();'];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() *100)
   const [index, setIndex] = useState(1);
