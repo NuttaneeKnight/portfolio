@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1>{`Hi! I'm Nuttanee Knight`} <br></br> <span className="txt-rotate" dataPeriod="1000"><span className="wrap">{text}</span></span></h1>
-                <p>Full Stack Developer<br></br> with hospitality background. Cannot wait to collaborate with you!</p>
+                <p>Full Stack Developer<br></br> with customer service background. Cannot wait to collaborate with you!</p>
                   <Nav.Link href="#contact"><button onClick={() => console.log('contact')}>Let’s Connect <ArrowRightCircle href='#contact' size={25} /></button></Nav.Link>
               </div>}
             </TrackVisibility>
