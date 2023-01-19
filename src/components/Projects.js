@@ -35,7 +35,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p></p>
+
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -64,7 +64,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>To be Continue...</p>
+                      <p>Learning Python 3 at the moment <br></br>Wait for the future project!</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>Any suggestion on which project I should work on? <br></br>Let me know below, would love to collaborate with fellow coders!</p>
