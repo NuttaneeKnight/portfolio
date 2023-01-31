@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -23,6 +24,11 @@ export const Projects = () => {
       title: "Study Tool App",
       description: "https://github.com/NuttaneeKnight/Study-Tool-Application",
       imgUrl: projImg3,
+    },
+    {
+      title: "Pinball Machine Locator",
+      description: "https://qt36tx.csb.app/",
+      imgUrl: projImg4,
     },
   ];
 
