@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import emailjs from '@emailjs/browser'
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -23,24 +23,28 @@ export const Contact = () => {
       [category]: value,
     });
   };
-  const form = useRef()
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
-      .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_USER_ID)
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_USER_ID
+      )
       .then(
         () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
+          alert("Message successfully sent!");
+          window.location.reload(false);
         },
         () => {
-          alert('Failed to send the message, please try again')
+          alert("Failed to send the message, please try again");
         }
-      )
- 
-  }
+      );
+  };
 
   return (
     <section className="contact" id="contact">
@@ -62,65 +66,69 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div className={isVisible ? "animate__animated" : ""}>
                   <h2>Get In Touch</h2>
                   <div>
-                  <form ref={form} onSubmit={sendEmail}>
-                    <Row>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          input placeholder="Name" type="text" name="name" required
-                        />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          input placeholder="Lastname" type="text" name="name" required
-                        />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          placeholder="Email"
-                          type="email"
-                          name="email"
-                          required
-                        />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          placeholder="Subject"
-                          type="text"
-                          name="subject"
-                          required
-                        />
-                      </Col>
-                      <Col size={12} className="px-1">
-                        <textarea
-                          placeholder="Message"
-                          name="message"
-                          required
-                        ></textarea>
-                        <button type="submit">
-                          <span>Send</span>
-                        </button>
-                      </Col>
-                      {status.message && (
-                        <Col>
-                          <p
-                            className={
-                              status.success === false ? "danger" : "success"
-                            }
-                          >
-                            {status.message}
-                          </p>
+                    <form ref={form} onSubmit={sendEmail}>
+                      <Row>
+                        <Col size={12} sm={6} className="px-1">
+                          <input
+                            input
+                            placeholder="Name"
+                            type="text"
+                            name="name"
+                            required
+                          />
                         </Col>
-                      )}
-                    </Row>
-                  </form>
-                </div>
+                        <Col size={12} sm={6} className="px-1">
+                          <input
+                            input
+                            placeholder="Lastname"
+                            type="text"
+                            name="name"
+                            required
+                          />
+                        </Col>
+                        <Col size={12} sm={6} className="px-1">
+                          <input
+                            placeholder="Email"
+                            type="email"
+                            name="email"
+                            required
+                          />
+                        </Col>
+                        <Col size={12} sm={6} className="px-1">
+                          <input
+                            placeholder="Subject"
+                            type="text"
+                            name="subject"
+                            required
+                          />
+                        </Col>
+                        <Col size={12} className="px-1">
+                          <textarea
+                            placeholder="Message"
+                            name="message"
+                            required
+                          ></textarea>
+                          <button type="submit">
+                            <span>Send</span>
+                          </button>
+                        </Col>
+                        {status.message && (
+                          <Col>
+                            <p
+                              className={
+                                status.success === false ? "danger" : "success"
+                              }
+                            >
+                              {status.message}
+                            </p>
+                          </Col>
+                        )}
+                      </Row>
+                    </form>
+                  </div>
                 </div>
               )}
             </TrackVisibility>

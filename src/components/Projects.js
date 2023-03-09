@@ -41,7 +41,7 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "animate__animated animate__flipInX" : ""
                   }
                 >
                   <h2>Projects</h2>
