@@ -41,7 +41,7 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__flipInX" : ""
+                    isVisible ? "animate__animated animate__shakeX" : ""
                   }
                 >
                   <h2>Projects</h2>
