@@ -3,12 +3,11 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import NuttaneeKnight from '../assets/NuttaneeKnight.pdf'
+import NuttaneeKnight from "../assets/NuttaneeKnight.pdf";
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -32,18 +31,25 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>About 👩‍💻 &&<br></br> My Skills 🖥</h2>
+              <h2>
+                About 👩‍💻 &&<br></br> My Skills 🖥
+              </h2>
               <p>
                 Experienced Front End web developer with Full Stack developer
                 experience. I am a software engineer bootcamp graduate with an
                 extensive background in hospitality management.<br></br>
                 <p>
                   My skills include: <br></br>Frontend: HTML, CSS, JavaScript,
-                  React, jQuery <br></br>Backend: Node.js, Express, RESTful
-                  APIs, PostgreSQL<br></br>Misc.: Mocha, Chai, Knex, Git,
-                  GitHub, Heroku, Node Package Manager, Visual Studio Code
+                  React, TypeScript, jQuery, Python <br></br>Backend: Node.js,
+                  Express, RESTful APIs, PostgreSQL<br></br>Misc.: Mocha, Chai,
+                  Knex, Git, GitHub, Heroku, Node Package Manager, Visual Studio
+                  Code
                 </p>
-                <a href={NuttaneeKnight} download='NuttaneeKnight'><button type="button" class="btn btn-primary">Get Resume</button></a>
+                <a href={NuttaneeKnight} download="NuttaneeKnight">
+                  <button type="button" class="btn btn-primary">
+                    Get Resume
+                  </button>
+                </a>
               </p>
               <Carousel
                 responsive={responsive}
