@@ -16,7 +16,7 @@ export const Projects = () => {
     },
     {
       title: "Restaurant Reservation App",
-      description: "https://ekb1ti-3000.csb.app/dashboard?date=2023-03-15",
+      description: "https://github.com/NuttaneeKnight/Restaurant_Reservation_App",
       imgUrl: projImg2,
     },
     {
