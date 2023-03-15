@@ -16,7 +16,8 @@ export const Projects = () => {
     },
     {
       title: "Restaurant Reservation App",
-      description: "https://restaurant-reservation-app.netlify.app/",
+      description:
+        "https://github.com/NuttaneeKnight/Restaurant_Reservation_App",
       imgUrl: projImg2,
     },
     {
