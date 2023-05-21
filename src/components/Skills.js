@@ -40,10 +40,10 @@ export const Skills = () => {
                 extensive background in hospitality management.<br></br>
                 <p>
                   My skills include: <br></br>Frontend: HTML, CSS, JavaScript,
-                  React, TypeScript, jQuery, Python <br></br>Backend: Node.js,
-                  Express, RESTful APIs, PostgreSQL<br></br>Misc.: Mocha, Chai,
-                  Knex, Git, GitHub, Heroku, Node Package Manager, Visual Studio
-                  Code
+                  React, TypeScript, jQuery, Python, ServiceNow <br></br>
+                  Backend: Node.js, Express, RESTful APIs, PostgreSQL<br></br>
+                  Misc.: Mocha, Chai, Knex, Git, GitHub, Heroku, Node Package
+                  Manager, Visual Studio Code
                 </p>
                 <a href={NuttaneeKnight} download="NuttaneeKnight">
                   <button type="button" class="btn btn-primary">
@@ -87,6 +87,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={meter2} alt="" />
                   <h5>Git</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="" />
+                  <h5>ServiceNow</h5>
                 </div>
               </Carousel>
             </div>
