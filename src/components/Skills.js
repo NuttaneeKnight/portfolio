@@ -40,10 +40,10 @@ export const Skills = () => {
                 extensive background in hospitality management.<br></br>
                 <p>
                   My skills include: <br></br>Frontend: HTML, CSS, JavaScript,
-                  React, TypeScript, jQuery, Python, ServiceNow <br></br>
+                  React, TypeScript, jQuery, Python <br></br>
                   Backend: Node.js, Express, RESTful APIs, PostgreSQL<br></br>
                   Misc.: Mocha, Chai, Knex, Git, GitHub, Heroku, Node Package
-                  Manager, Visual Studio Code
+                  Manager, Visual Studio Code, ServiceNow
                 </p>
                 <a href={NuttaneeKnight} download="NuttaneeKnight">
                   <button type="button" class="btn btn-primary">
